@@ -26,6 +26,12 @@ git push (se subiran los cambios a la rama especifica donde se este trabajando)
 en el caso anterior, cuando la rama no esta creada en el servidor remoto, si esta creada, pero no esta asociada a nuestra rama local, se usa el siguiente comando
 -git push --set-upstream origin master ("master" es la rama del servidor remoto a la cual se esta asociando nuestra rama local la cual debe tener el mismo nombre)
 
+obtener todos los cambios del servidor remoto que aun no tengo localmente (especificamente a la rama en la que estoy trabajando)
+-git pull
+
+Buscar los cambios estructurales realizados en el servidor remoto y bajarlos (esto aplica a cuando se crean ramas nuevas en el servidor remoto y quiero accesarlas desde mi equipo local)
+-git fech
+
 Ver el listado de ramas locales
 -git branch
 
@@ -34,3 +40,9 @@ Ver el listado de ramas locales y su ultimo commit asociado
 
 Ver el listado de commits realizados, en orden decendente
 -git log
+
+Crear una nueva rama
+-git checkout -b nombreRama (se puede nombrar a la rama con cualquier nombre, pero debe ser una palabra)
+
+Cambiar de rama local
+-git checkout master
