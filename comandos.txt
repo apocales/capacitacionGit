@@ -10,3 +10,27 @@ Asociar un repositorio local a un repositorio remoto existente
 
 Crear un repositorio local desde uno remoto existente
 -git clone git@github.com:apocales/capacitacionGit.git
+
+Ver modificaciones realizadas al repositorio local
+-git status
+
+Añadir cambios al realizados a la lista de cambios para realizar el proximo commit 
+-git add . (el punto se usa para añadir todos los cambios, pero se puede especificar archivo a archivo)
+
+Confirmar cambios (a nivel local)
+-git commit -m "comentario" (en el comentario se debe escribir la tematica de los cambios realizados a modo de resumen, esto resulta altamente beneficio con el paso del tiempo)
+
+-subir cambios al servidor remoto
+git push (se subiran los cambios a la rama especifica donde se este trabajando)
+
+en el caso anterior, cuando la rama no esta creada en el servidor remoto, si esta creada, pero no esta asociada a nuestra rama local, se usa el siguiente comando
+-git push --set-upstream origin master ("master" es la rama del servidor remoto a la cual se esta asociando nuestra rama local la cual debe tener el mismo nombre)
+
+Ver el listado de ramas locales
+-git branch
+
+Ver el listado de ramas locales y su ultimo commit asociado
+-git branch -v
+
+Ver el listado de commits realizados, en orden decendente
+-git log
