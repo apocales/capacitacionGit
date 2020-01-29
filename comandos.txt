@@ -1,0 +1,12 @@
+Inicializar un repositorio local
+-git init 
+
+Ver el listado de servidores remotos asociados
+-git remote -v 
+
+Asociar un repositorio local a un repositorio remoto existente
+-git remote add origin git@github.com:apocales/capacitacionGit.git
+-git push -u origin master
+
+Crear un repositorio local desde uno remoto existente
+-git clone git@github.com:apocales/capacitacionGit.git
