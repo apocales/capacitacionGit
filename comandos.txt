@@ -45,4 +45,11 @@ Crear una nueva rama
 -git checkout -b nombreRama (se puede nombrar a la rama con cualquier nombre, pero debe ser una palabra)
 
 Cambiar de rama local
--git checkout master
+-git checkout master ("master" representa el nombre de cualquier rama a la que te quieras mover)
+
+Unir cambios de entre ramas locales
+-git merge master (desde la rama en la que te encuentras indicas cual es la rama de la que tomaras los nuevos cambios)
+
+Especificar nombre y correo usado por git
+-git config --global user.name "nombre"
+-git config --global user.email "correo"
